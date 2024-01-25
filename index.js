@@ -11,6 +11,7 @@ app.get("/", (req, res) => {
   const random8DigitNumber = Math.floor(Math.random() * (max - min + 1)) + min;
 
   const formattedNumber = String(random8DigitNumber).padStart(8, "0");
+  console.log(formattedNumber)
   res.send(`${formattedNumber}`);
 });
 
